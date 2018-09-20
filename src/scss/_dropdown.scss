@@ -193,9 +193,10 @@ $responsive-breakpoint: 768px
       text-align: left;
       height: auto;
       position: relative;
-      background: transparent;
+      background: white;
       border: none;
       z-index: 999;
+
       @include layout-width($layout-width);
       @include shadow-type($box-shadow);
 
@@ -244,6 +245,12 @@ $responsive-breakpoint: 768px
         border-radius: $border-radius+px;
         overflow: auto;
         padding: 0 $padding/2 $padding/2;
+
+        &:after{
+          padding-top:200px;
+          content: "See More";
+          padding: 4px;
+        }
       }
 
       // Inner-grid setup
@@ -259,6 +266,13 @@ $responsive-breakpoint: 768px
       background: $background-color;
       color: $title-color;
       overflow: hidden;
+
+      &:last-of-type{
+        margin-bottom:10px;
+        padding-bottom:10px;
+        border-bottom: 1px solid #ddd;
+
+      }
 
       @if $highlight-type == basic {
         &--highlight {
