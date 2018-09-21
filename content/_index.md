@@ -24,6 +24,8 @@ Datadog lets you collect all these metrics, events, and service states in one pl
 
 Collect a wealth of already-available data without writing any code. [Install the Datadog Agent][1] everywhere—every server, instance, VM, node, [container-running host][2]—then enable and configure any of the 200+ out-of-the-box [integrations][3] to start the metrics flowing to Datadog's backend.
 
+<div id="surveyContent"></div>
+
 Submit custom application metrics by writing a little code. Instrument your own gauges, counters, timers, and histograms with [DogStatsD][4], or use [APM][5] to trace the execution time of any code path to see how it impacts overall request-response times. The [client libraries][6] send your [custom metrics][7] and trace data to the Datadog Agent, which then ships them off to Datadog.
 
 Some of your stack may be SaaS, not servers. Datadog can [poll many of these services](/integrations), and the integrations for them are the easiest of all to install-no Agent required.
